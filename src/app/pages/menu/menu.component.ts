@@ -1,21 +1,21 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { PageScrollService } from 'ngx-page-scroll-core';
 
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'app-menu',
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.css'],
 })
-export class AppComponent {
-  title = 'silvia-peralta';
-
-  activeSection = 1;
-
+export class MenuComponent implements OnInit {
+  activeSection = 5;
   constructor(
     private pageScrollService: PageScrollService,
     @Inject(DOCUMENT) private document: any
   ) {}
+
+  ngOnInit(): void {}
 
   fullPageScroll(e: HTMLElement, i) {
     this.pageScrollService.scroll({

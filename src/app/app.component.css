@@ -1,0 +1,11 @@
+.logo-img{
+    margin-left: 1em;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+}
+
+.container_div{
+    margin: 1em;
+}

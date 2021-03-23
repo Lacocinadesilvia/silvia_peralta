@@ -1,10 +1,63 @@
-<div class="jumbotron">
-  <h1 class="display-3">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p>
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a
+      ><img
+        class="logo-img"
+        src="assets/img/logo.png"
+        alt="logo"
+        height="24"
+        width="24"
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item">
+          <a class="nav-link" pageScroll (click)="fullPageScroll(section1, 1)"
+            >HOME <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" pageScroll (click)="fullPageScroll(section2, 2)"
+            >MENU</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" pageScroll (click)="fullPageScroll(section3, 3)"
+            >ACERCA DE MI</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" pageScroll (click)="fullPageScroll(section4, 4)"
+            >CONTACTO</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<span #section1>
+  <app-home></app-home>
+</span>
+<div class="container_div">
+  <span #section2>
+    <app-menu></app-menu>
+  </span>
+  <span #section3>
+    <app-about></app-about>
+  </span>
+  <span #section4>
+    <app-contact></app-contact>
+  </span>
 </div>
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur sunt suscipit modi, molestiae quo impedit ipsam aut dolorem harum officiis esse vero, delectus nihil, quod temporibus sequi. Reiciendis, rerum qui?

@@ -1,0 +1,30 @@
+.card-img-overlay {
+  border: none !important;
+  border-radius: 0% !important;
+}
+.card {
+  border: none !important;
+  border-radius: 0% !important;
+}
+
+.card-img {
+  border: none !important;
+  border-radius: 0% !important;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+  .card-group > .card {
+    min-height: 585px !important;
+  }
+}

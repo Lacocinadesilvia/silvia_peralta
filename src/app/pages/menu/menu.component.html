@@ -1,0 +1,52 @@
+<main>
+  <div
+    class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-gradient-light"
+  >
+    <div class="col-md-2 p-lg-2 mx-auto my-2">
+      <h1>MENU</h1>
+    </div>
+  </div>
+</main>
+<div class="card-group">
+  <div class="card d-flex text-white">
+    <img
+      src="assets/img/tarta_arg.jpg"
+      class="card-img img-fluid image"
+      alt="tarta"
+    />
+    <div
+      class="card-img-overlay align-items-center d-flex justify-content-center"
+    >
+      <a
+        pageScroll
+        (click)="fullPageScroll(section5, 5)"
+        class="card-title text-center"
+        >DULCES</a
+      >
+    </div>
+  </div>
+  <div class="card d-flex text-white">
+    <img
+      src="assets/img/empanadas4.jpeg"
+      class="card-img img-fluid image"
+      alt="empanada_carne"
+    />
+    <div
+      class="card-img-overlay align-items-center d-flex justify-content-center"
+    >
+      <a
+        pageScroll
+        (click)="fullPageScroll(section6, 6)"
+        class="card-title text-center"
+        >EMPANADAS</a
+      >
+    </div>
+  </div>
+</div>
+
+<span #section5>
+  <app-dulces></app-dulces>
+</span>
+<span #section6>
+  <app-empanadas></app-empanadas>
+</span>
